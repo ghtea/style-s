@@ -1,4 +1,11 @@
+@import "../../config/_variables.scss";
 
-.button--1 {
+
+$theme: 'day';
+
+$accent-color__day: $color_bg;
+
+.button__1 {
   font-size: 2rem;
+  color: $accent-color__day;
 }

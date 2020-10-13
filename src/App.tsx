@@ -7,7 +7,8 @@ import Pages from "./routes/Pages";
 
 type PropsApp = {};
 
-// https://velog.io/@velopert/create-typescript-react-component
+// TS  https://velog.io/@velopert/create-typescript-react-component
+// SCSS https://sass-guidelin.es/ko/
 function App({}: PropsApp) {
   return (
     <BrowserRouter>

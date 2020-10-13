@@ -1,21 +1,17 @@
 import React from "react";
-import './Buttons.scss'; // .css not work
+import styles from "./Buttons.scss"; // .css not work
+// css module not works yet
 
-type PropsButtons = {
-  
-};
+type PropsButtons = {};
 
-function Buttons({ }: PropsButtons) {
-  
+function Buttons({}: PropsButtons) {
   return (
-    <div className='container-button'>
-      <button className='button--1'>button1</button>
+    <div className="container-button">
+      <button className={styles.button__1}>button1</button>
     </div>
   );
 }
 
-Buttons.defaultProps = {
-  
-};
+Buttons.defaultProps = {};
 
 export default Buttons;
