@@ -24,6 +24,10 @@ const App = ({ message }: PropsApp) => {
     setValue(e.target.value);
   };
 
+  const onClick = (name: string) => {
+    console.log(`${name} says hello`);
+  };
+
   return (
     <div className="App">
       <div>hello</div>

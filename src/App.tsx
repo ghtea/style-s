@@ -1,16 +1,29 @@
 import React from "react";
-import Greetings from "./Greetings";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-type PropsApp = {
-  
-};
+import Home from "./routes/Home";
+import Units from "./routes/Units";
+import Pages from "./routes/Pages";
+
+type PropsApp = {};
 
 // https://velog.io/@velopert/create-typescript-react-component
-function App ({}:PropsApp) {
-  const onClick = (name: string) => {
-    console.log(`${name} says hello`);
-  };
-  return <Greetings name="Hello" onClick={onClick} />;
-};
+function App({}: PropsApp) {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact={true}>
+          <Home />
+        </Route>
+        <Route path="/units">
+          <Units />
+        </Route>
+        <Route path="/pages">
+          <Pages />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  );
+}
 
 export default App;

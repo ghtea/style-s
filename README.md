@@ -1,2 +1,5 @@
 # test-ts-functional
-Created with CodeSandbox
+
+## refs
+
+- https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/hooks
