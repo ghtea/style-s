@@ -1,12 +1,7 @@
 import React from "react";
 import Greetings from "./Greetings";
 
-type PropsApp = {
-  
-};
-
-// https://velog.io/@velopert/create-typescript-react-component
-function App ({}:PropsApp) {
+const App: React.FC = () => {
   const onClick = (name: string) => {
     console.log(`${name} says hello`);
   };
