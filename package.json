@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
+    "@csstools/normalize.css": "11.0.1",
     "classnames": "2.2.6",
     "css-loader": "4.3.0",
     "node-sass": "4.14.1",
