@@ -1,5 +1,6 @@
-# test-ts-functional
+# Style S
 
-## refs
+## summary
 
-- https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/hooks
+- collection of styled things
+- TypeScript, React, Sass, CSS Module, classnames

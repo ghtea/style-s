@@ -1,4 +1,4 @@
-@import "../../config/_variables.scss";
+@import "../../config/color.scss";
 
 
 $theme: 'day';
@@ -26,12 +26,20 @@ $theme: 'day';
   }
 }
 
-.button_1 {
+.button_common {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  background-color: transparent;
+}
 
-  color: $color_main;
+.button_1 {
+  color: $color_basic;
 }
 
 .button_2 {
-
   color: blue;
 }
