@@ -12,11 +12,11 @@ function Buttons({}: PropsButtons) {
   return (
     <div className={cx("collection_button")}>
       <div>
-        <button className={cx("button_1", "button_common")}> button 1 </button>
+        <button className={cx("button_1", "button_reset")}> button 1 </button>
       </div>
 
       <div>
-        <button className={cx("button_2", "button_common")}> button 2 </button>
+        <button className={cx("button_2", "button_reset")}> button 2 </button>
       </div>
     </div>
   );

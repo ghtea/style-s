@@ -3,4 +3,4 @@
 ## summary
 
 - collection of styled things
-- TypeScript, React, Sass, CSS Module, classnames
+- TypeScript, React, SCSS, CSS Module, classnames

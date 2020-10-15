@@ -1,8 +1,6 @@
 @import "../../config/color.scss";
 
 
-$theme: 'day';
-
 .collection_button {
   display: flex;
   flex-direction: row;
@@ -14,27 +12,33 @@ $theme: 'day';
     width: 200px;
     height: 50px;
 
+    border: 1px solid #eee;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    & > button {
-      font-size: 1.2rem;
-    }
-
   }
 }
 
-.button_common {
+
+.button_reset {
   margin: 0;
-	padding: 0;
-	border: 0;
+  padding: 0;
+  
+  border: 0;
+  
 	font-size: 100%;
-	font: inherit;
+  font: inherit;
+  
   vertical-align: baseline;
   background-color: transparent;
+
+  &:focus{
+    outline: black solid 0px;
+  }
 }
+
 
 .button_1 {
   color: $color_basic;

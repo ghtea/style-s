@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
+import Nav from "./routes/Nav";
 import Home from "./routes/Home";
 import Units from "./routes/Units";
 import Pages from "./routes/Pages";
@@ -13,6 +14,9 @@ type PropsApp = {};
 function App({}: PropsApp) {
   return (
     <BrowserRouter>
+
+      <Nav/>
+
       <Switch>
         <Route path="/" exact={true}>
           <Home />
