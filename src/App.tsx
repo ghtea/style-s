@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Nav from "./routes/Nav";
 import Home from "./routes/Home";
-import Units from "./routes/Units";
+import Works from "./routes/Works";
 import Pages from "./routes/Pages";
 
 import "./App.module.scss";
@@ -21,8 +21,8 @@ function App({}: PropsApp) {
         <Route path="/" exact={true}>
           <Home />
         </Route>
-        <Route path="/units">
-          <Units />
+        <Route path="/works">
+          <Works />
         </Route>
         <Route path="/pages">
           <Pages />

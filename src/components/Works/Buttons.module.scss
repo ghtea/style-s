@@ -22,29 +22,34 @@
 }
 
 
-.reset {
-  margin: 0;
-  padding: 0;
+.default {
   
-  border: 0;
-  
-	font-size: 100%;
-  font: inherit;
-  
-  vertical-align: baseline;
-  background-color: transparent;
+  button {
+    margin: 0;
+    padding: 0;
+    
+    border: 0;
+    
+    font-size: 100%;
+    font: inherit;
+    
+    vertical-align: baseline;
+    background-color: transparent;
 
-  &:focus{
-    outline: black solid 0px;
+    &:focus{
+      outline: black solid 0px;
+    }
   }
+
 }
 
 
-.button_1 {
-  color: $color_basic;
-  background-color: #fff;
-}
+.item1 {
 
-.button_2 {
-  color: blue;
+  background-color: #222;
+
+  button {
+    color: $color_basic;
+    
+  }
 }

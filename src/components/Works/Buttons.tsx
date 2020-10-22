@@ -11,13 +11,12 @@ const cn_Buttons = classNames.bind(styles_Buttons);
 function Buttons({}: PropsButtons) {
   return (
     <div className={cn_Buttons("collection")}>
-      <div>
-        <button className={cn_Buttons("button_1", "reset")}> button 1 </button>
+
+      <div className={cn_Buttons("default", "item1")}>
+        <button> button 1 </button>
       </div>
 
-      <div>
-        <button className={cn_Buttons("button_2", "reset")}> button 2 </button>
-      </div>
+
     </div>
   );
 }

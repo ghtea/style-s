@@ -9,45 +9,46 @@ const cn_Nav = classNames.bind(styles_Nav);
 type PropsNav = {};
 
 function Nav({}: PropsNav) {
-
   const history = useHistory();
 
   const onClick_Link = useCallback(
     (
-      event: React.ChangeEvent<HTMLDivElement | HTMLButtonElement | HTMLAnchorElement>,
+      event: React.ChangeEvent<
+        HTMLDivElement | HTMLButtonElement | HTMLAnchorElement
+      >,
       destination: string
     ) => {
       console.log(`${name} says hello`);
-      history.push(destination)
+      history.push(destination);
     },
     []
   );
 
   return (
     <nav className={cn_Nav("root")}>
+      <div className={cn_Nav("collection_tools", "left")}>
+        <div> info </div>
+      </div>
 
       <div className={cn_Nav("collection_links")}>
-
-        <div 
+        <div
           className={cn_Nav("link")}
-          onClick={(event)=>onClick_Link(event, '/units/buttons')}
-        >buttons
+          onClick={(event) => onClick_Link(event, "/works/buttons")}
+        >
+          button
         </div>
 
-        <div 
+        <div
           className={cn_Nav("link")}
-          onClick={(event)=>onClick_Link(event, '/units/buttons')}
-        >buttons
+          onClick={(event) => onClick_Link(event, "/works/navs")}
+        >
+          nav
         </div>
-
       </div>
 
-
-      <div className={cn_Nav("collection_tools")}>
-        <div>tool1</div>
-        <div>tool2</div>
+      <div className={cn_Nav("collection_tools", "right")}>
+        <div>view all</div>
       </div>
-
     </nav>
   );
 }
