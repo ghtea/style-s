@@ -20,11 +20,11 @@ const App = ({ message }: PropsApp) => {
   // together, TypeScript knows, "Ah, user can be User or null".
   const [user, setUser] = React.useState<User | null>(null);
 
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(e.target.value);
+  const onChange = (event: React.ChangeEvent<HTMLInputElement | HTMLDivElement >) => {
+    setValue(event.target.value);
   };
 
-  const onClick = (name: string) => {
+  const onClick = (event: , name: string) => {
     console.log(`${name} says hello`);
   };
 

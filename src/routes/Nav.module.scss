@@ -11,7 +11,7 @@
 }
 
 .collection_links {
-  width: auto;
+  width: 200px;
   height: 50px;
 
   display: flex;
@@ -21,5 +21,20 @@
 }
 
 .collection_tools {
+  width: 100px;
+  height: 50px;
 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.link {
+  width: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  cursor: pointer;
 }
