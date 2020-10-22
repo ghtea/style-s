@@ -6,6 +6,7 @@ import Home from "./routes/Home";
 import Units from "./routes/Units";
 import Pages from "./routes/Pages";
 
+import "./App.module.scss";
 
 type PropsApp = {};
 
@@ -14,8 +15,7 @@ type PropsApp = {};
 function App({}: PropsApp) {
   return (
     <BrowserRouter>
-
-      <Nav/>
+      <Nav />
 
       <Switch>
         <Route path="/" exact={true}>
