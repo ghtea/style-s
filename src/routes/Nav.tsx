@@ -23,7 +23,9 @@ function Nav({}: PropsNav) {
     },
     []
   );
+  
 
+  // button, input, hover (popup), nav, sidebar
   return (
     <nav className={cn_Nav("root")}>
       <div className={cn_Nav("collection_tools", "left")}>
