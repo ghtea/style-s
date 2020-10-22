@@ -1,7 +1,7 @@
 @import "../../config/color.scss";
 
 
-.collection_button {
+.collection {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -22,7 +22,7 @@
 }
 
 
-.button_reset {
+.reset {
   margin: 0;
   padding: 0;
   

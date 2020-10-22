@@ -1,5 +1,25 @@
 @import '../config/color.scss';
 
-.nav_reset {
-  display: block;
+.root {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection_links {
+  width: auto;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection_tools {
+
 }

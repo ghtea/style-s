@@ -1,22 +1,22 @@
 import React from "react";
 
 import classNames from "classnames/bind"; // easy to forget bind!
-import styles from "./Buttons.module.scss";
+import styles_Buttons from "./Buttons.module.scss";
 // css module not works yet
 
 type PropsButtons = {};
 
-const cx = classNames.bind(styles);
+const cn_Buttons = classNames.bind(styles_Buttons);
 
 function Buttons({}: PropsButtons) {
   return (
-    <div className={cx("collection_button")}>
+    <div className={cn_Buttons("collection")}>
       <div>
-        <button className={cx("button_1", "button_reset")}> button 1 </button>
+        <button className={cn_Buttons("button_1", "reset")}> button 1 </button>
       </div>
 
       <div>
-        <button className={cx("button_2", "button_reset")}> button 2 </button>
+        <button className={cn_Buttons("button_2", "reset")}> button 2 </button>
       </div>
     </div>
   );
