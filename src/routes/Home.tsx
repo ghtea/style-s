@@ -8,7 +8,17 @@ function Home({ }: PropsHome) {
   
   return (
     <div>
-      home
+      <div> 
+        <div>buttons</div>
+      </div>
+      <div> 
+        <div>input text</div>
+        <div>input range</div>
+        <div>input checkbox</div>  
+      </div>
+      <div>
+        <div>rotate</div>
+      </div>
     </div>
   );
 }

@@ -23,13 +23,12 @@ function Nav({}: PropsNav) {
     },
     []
   );
-  
 
   // button, input, hover (popup), nav, sidebar
   return (
     <nav className={cn_Nav("root")}>
-      <div className={cn_Nav("collection_tools", "left")}>
-        <div> info </div>
+      <div className={cn_Nav("collection_others", "left")}>
+        <div> Style S </div>
       </div>
 
       <div className={cn_Nav("collection_links")}>
@@ -42,14 +41,44 @@ function Nav({}: PropsNav) {
 
         <div
           className={cn_Nav("link")}
-          onClick={(event) => onClick_Link(event, "/works/navs")}
+          onClick={(event) => onClick_Link(event, "/works/input-text")}
         >
-          nav
+          input-text
         </div>
+
+        <div
+          className={cn_Nav("link")}
+          onClick={(event) => onClick_Link(event, "/works/input-range")}
+        >
+          input-range
+        </div>
+
+        <div
+          className={cn_Nav("link")}
+          onClick={(event) => onClick_Link(event, "/works/input-checkbox")}
+        >
+          input-checkbox
+        </div>
+
+        <div
+          className={cn_Nav("link")}
+          onClick={(event) => onClick_Link(event, "/works/input-radio")}
+        >
+          input-radio
+        </div>
+
+        <div
+          className={cn_Nav("link")}
+          onClick={(event) => onClick_Link(event, "/works/animation")}
+        >
+          animation
+        </div>
+
+
       </div>
 
-      <div className={cn_Nav("collection_tools", "right")}>
-        <div>view all</div>
+      <div className={cn_Nav("collection_others", "right")}>
+        <div>nav bar</div>
       </div>
     </nav>
   );
