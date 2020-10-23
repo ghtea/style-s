@@ -14,7 +14,7 @@
 }
 
 
-.collection_others {
+.left .right {
   width: 80px;
   height: 50px;
 
@@ -22,10 +22,11 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
 
 
-.collection_links {
+.middle {
   width: 100%;
   max-width: 300px;
   /*overflow: auto;*/
@@ -36,16 +37,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  font-size: 1.2rem;
 }
 
 
-.link {
-  
-  width: auto;
-  padding-left: 5px;
-  padding-right: 5px;
 
-  font-size: 0.9rem;
-  line-height: 1.1rem;
+.home {
   cursor: pointer;
 }

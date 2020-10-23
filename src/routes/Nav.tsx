@@ -18,7 +18,7 @@ function Nav({}: PropsNav) {
       >,
       destination: string
     ) => {
-      console.log(`${name} says hello`);
+      console.log(`going to ${destination}`);
       history.push(destination);
     },
     []
@@ -27,58 +27,21 @@ function Nav({}: PropsNav) {
   // button, input, hover (popup), nav, sidebar
   return (
     <nav className={cn_Nav("root")}>
-      <div className={cn_Nav("collection_others", "left")}>
+      <div className={cn_Nav("left")}>
+        <div
+          className={cn_Nav("home")}
+          onClick={(event) => onClick_Link(event, "/")}
+        > Home </div>
+      </div>
+
+      <div className={cn_Nav("middle")}>
+        
         <div> Style S </div>
-      </div>
-
-      <div className={cn_Nav("collection_links")}>
-        <div
-          className={cn_Nav("link")}
-          onClick={(event) => onClick_Link(event, "/works/buttons")}
-        >
-          button
-        </div>
-
-        <div
-          className={cn_Nav("link")}
-          onClick={(event) => onClick_Link(event, "/works/input-text")}
-        >
-          input-text
-        </div>
-
-        <div
-          className={cn_Nav("link")}
-          onClick={(event) => onClick_Link(event, "/works/input-range")}
-        >
-          input-range
-        </div>
-
-        <div
-          className={cn_Nav("link")}
-          onClick={(event) => onClick_Link(event, "/works/input-checkbox")}
-        >
-          input-checkbox
-        </div>
-
-        <div
-          className={cn_Nav("link")}
-          onClick={(event) => onClick_Link(event, "/works/input-radio")}
-        >
-          input-radio
-        </div>
-
-        <div
-          className={cn_Nav("link")}
-          onClick={(event) => onClick_Link(event, "/works/animation")}
-        >
-          animation
-        </div>
-
 
       </div>
 
-      <div className={cn_Nav("collection_others", "right")}>
-        <div>nav bar</div>
+      <div className={cn_Nav("right")}>
+        <div> designer </div>
       </div>
     </nav>
   );
