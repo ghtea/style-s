@@ -1,4 +1,5 @@
 @import "../../config/color.scss";
+@import "../../config/tools.scss";
 
 
 .collection {
@@ -8,26 +9,25 @@
   align-items: center;
   flex-wrap: wrap;
 
-  & > div {
-    width: 200px;
-    height: 50px;
-
-    border: 1px solid #eee;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  margin-top: 10px;
 }
 
 
 .default {
   
+  width: 200px;
+  height: 70px;
+
+  /*border: 1px solid #eee;*/
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   button {
     margin: 0;
     padding: 0;
-    
     border: 0;
     
     font-size: 100%;
@@ -46,10 +46,22 @@
 
 .item1 {
 
-  background-color: #222;
+  $main-color: #2ea44f;
 
   button {
-    color: $color_basic;
-    
+
+    width: 90px;
+    height: 30px;
+
+    font-size: 16px;
+
+    border-radius: 5px;
+    border: 1px solid scale-color($color: $main-color, $saturation: 5, $lightness: -50);
+
+    color: #ffffff;
+    background-color: $main-color;
+    &:hover {
+      background-color: scale-color($color: $main-color, $saturation: 0, $lightness: -10);
+    }
   }
 }
