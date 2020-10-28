@@ -1,4 +1,4 @@
-import React, {useCallback} from "react";
+import React, { useCallback } from "react";
 import { useHistory } from "react-router-dom";
 
 import classNames from "classnames/bind"; // easy to forget bind!
@@ -9,7 +9,6 @@ const cn_Home = classNames.bind(styles_Home);
 type PropsHome = {};
 
 function Home({}: PropsHome) {
-
   const history = useHistory();
 
   const onClick_Link = useCallback(
@@ -27,21 +26,22 @@ function Home({}: PropsHome) {
 
   return (
     <div className={cn_Home("root")}>
-      
       <div className={cn_Home("group", "basic")}>
-
         <div
           className={cn_Home("item", "buttons")}
           onClick={(event) => onClick_Link(event, "/works/buttons")}
         >
           buttons
         </div>
-
+        <div
+          className={cn_Home("item", "tooltips")}
+          onClick={(event) => onClick_Link(event, "/works/tooltips")}
+        >
+          tooltips
+        </div>
       </div>
 
-
       <div className={cn_Home("group", "input")}>
-
         <div
           className={cn_Home("item", "inputs-text")}
           onClick={(event) => onClick_Link(event, "/works/inputs-text")}
@@ -49,7 +49,6 @@ function Home({}: PropsHome) {
           inputs: text
         </div>
 
-        
         <div
           className={cn_Home("item", "inputs-range")}
           onClick={(event) => onClick_Link(event, "/works/inputs-range")}
@@ -57,30 +56,24 @@ function Home({}: PropsHome) {
           inputs: range
         </div>
 
-        
         <div
           className={cn_Home("item", "inputs-checkbox")}
           onClick={(event) => onClick_Link(event, "/works/inputs-checkbox")}
         >
           inputs: checkbox
         </div>
-
       </div>
 
       <div className={cn_Home("group", "animation")}>
-        
         <div
           className={cn_Home("item", "rotate")}
           onClick={(event) => onClick_Link(event, "/works/rotate")}
         >
           animation: rotate
         </div>
-
       </div>
 
-
       <div className={cn_Home("group", "big")}>
-        
         <div
           className={cn_Home("item", "sidebar")}
           onClick={(event) => onClick_Link(event, "/works/sidebar")}
@@ -94,10 +87,7 @@ function Home({}: PropsHome) {
         >
           top menu
         </div>
-
       </div>
-
-
     </div>
   );
 }
