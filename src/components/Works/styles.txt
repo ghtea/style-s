@@ -1,0 +1,17 @@
+
+
+hover (active) effect
+  - filling effect
+  https://codepen.io/comehope/pen/qYMoPo
+  - move up and down nicely 
+  https://codepen.io/sean_codes/pen/zwJQeB
+
+
+sidebar
+- https://freefrontend.com/css-sidebar-menus/
+
+
+
+begining animation
+- lol wildrift
+  https://wildrift.leagueoflegends.com/ko-kr/champions/
