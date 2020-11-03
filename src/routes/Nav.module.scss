@@ -9,12 +9,12 @@
   justify-content: center;
   align-items: center;
 
-  background-color: #334;
-  color: #eee;
+  background-color: none;
+  border-bottom: 2px solid lighten($color_basic, 20%);
 }
 
 
-.left .right {
+.left, .right {
   width: 80px;
   height: 50px;
 
@@ -23,6 +23,7 @@
   justify-content: center;
   align-items: center;
 
+  color: darken($color_basic, 5%);
 }
 
 
@@ -32,13 +33,27 @@
   /*overflow: auto;*/
 
   height: 50px;
-
+  
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 
   font-size: 1.2rem;
+  font-weight: normal;
+
+  & > div {
+    width: 90px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: $color_basic;
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 

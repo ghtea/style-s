@@ -18,6 +18,28 @@ function Works({}: PropsWorks) {
       <Route path="/works/tooltips">
         <Tooltips />
       </Route>
+
+      <Route path="/works/inputs-text">
+        <div />
+      </Route>
+      <Route path="/works/inputs-range">
+        <div />
+      </Route>
+      <Route path="/works/inputs-checkbox">
+        <div />
+      </Route>
+
+      <Route path="/works/rotate">
+        <div />
+      </Route>
+
+      <Route path="/works/sidebar">
+        <div />
+      </Route>
+      <Route path="/works/top-menu">
+        <div />
+      </Route>
+
     </Switch>
   );
 }

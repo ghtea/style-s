@@ -36,26 +36,28 @@
    /*$main-color: hsl(0,0%,50%);*/
 
   width: auto;
-  height: 30px;
+  height: 32px;
 
   box-sizing: border-box;
 
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
   padding-top: 4px;
 
   font-size: 1.1rem;
   line-height: 1.1rem;
   cursor: pointer;
 
-  color: hsl(0,0%,20%);
-  border: 1px solid hsl(0,0%,60%);
-  border-radius: 5px;
+  color: darken($color_basic, 5%);
+  font-weight: bold;
+  border: 1px solid darken($color_basic, 5%);
+  border-radius: 8px;
 
   &:hover {
-    color: hsl(0,0%,0%);
+    color: #fff;
     font-weight: bold;
-    border: none;
+    border: 1px solid darken($color_basic, 5%);
+    background-color: $color_basic;
   }
 
   &:nth-child(n+2){

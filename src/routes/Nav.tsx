@@ -31,13 +31,14 @@ function Nav({}: PropsNav) {
         <div
           className={cn_Nav("home")}
           onClick={(event) => onClick_Link(event, "/")}
-        > Home </div>
+        >
+          {" "}
+          Home{" "}
+        </div>
       </div>
 
       <div className={cn_Nav("middle")}>
-        
         <div> Style S </div>
-
       </div>
 
       <div className={cn_Nav("right")}>
