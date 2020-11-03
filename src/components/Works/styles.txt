@@ -5,7 +5,9 @@ hover (active) effect
   https://codepen.io/comehope/pen/qYMoPo
   - move up and down nicely 
   https://codepen.io/sean_codes/pen/zwJQeB
-
+  
+  - image to color (to show text)
+  https://mattfarley.ca/
 
 sidebar
 - https://freefrontend.com/css-sidebar-menus/
