@@ -39,6 +39,12 @@ function Home({}: PropsHome) {
         >
           tooltips
         </div>
+        <div
+          className={cn_Home("item", "social")}
+          onClick={(event) => onClick_Link(event, "/works/social")}
+        >
+          social
+        </div>
       </div>
 
       <div className={cn_Home("group", "input")}>
@@ -64,7 +70,7 @@ function Home({}: PropsHome) {
         </div>
       </div>
 
-      <div className={cn_Home("group", "animation")}>
+      <div className={cn_Home("group", "effect")}>
         <div
           className={cn_Home("item", "rotate")}
           onClick={(event) => onClick_Link(event, "/works/rotate")}

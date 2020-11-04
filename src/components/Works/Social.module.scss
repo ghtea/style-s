@@ -1,0 +1,27 @@
+@import "../../config/color.scss";
+@import "../../config/tools.scss";
+
+
+.collection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+
+.default {
+  
+  width: 200px;
+  height: 70px;
+
+
+}
+
+
+.item1 {
+
+  
+}

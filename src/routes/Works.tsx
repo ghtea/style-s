@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Buttons from "../components/Works/Buttons";
 import Tooltips from "../components/Works/Tooltips";
+import Social from "../components/Works/Social";
 
 type PropsWorks = {};
 
@@ -17,6 +18,9 @@ function Works({}: PropsWorks) {
       </Route>
       <Route path="/works/tooltips">
         <Tooltips />
+      </Route>
+      <Route path="/works/social">
+        <Social />
       </Route>
 
       <Route path="/works/inputs-text">
