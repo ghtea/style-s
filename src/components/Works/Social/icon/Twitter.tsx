@@ -8,7 +8,17 @@ type PropsIcon = {
 	transform: string;
 };
 
-// heart
+type StyleIcon = {
+  width: string;
+  height: string;
+  transform: string;
+  display: string;
+  flexFlow: string;
+  justifyContent: string;
+  alignItems: string;
+}
+
+// Twitter
 const Icon = ({
 	width, height,
 	color,
@@ -21,7 +31,7 @@ const Icon = ({
 				width: `${width}`, 
 				height:`${height}`, 
 				transform:`${transform}`  
-			}} 
+			} as StyleIcon} 
 		>
 		
 			<svg 
