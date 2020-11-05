@@ -18,35 +18,55 @@ type PropsSocial1 = {};
 const cn_Social1 = classNames.bind(styles_Social1);
 
 function Social1({}: PropsSocial1) {
+
+
   return (
-    <div className={cn_Social1("default", "item1")}>
+    <div className={cn_Social1("item")}>
 
-
-      <div className="share-button">
-
-        <div className="share-button__front">
+        <div className={cn_Social1("front")}>
           <p className="share-button__text">Share</p>
         </div>
 
-        <div className="share-button__back">
-          <a className="share__link" href="#" title="twitter">
-            twitter
-          </a>
+        <div className={cn_Social1("back")}>
 
-          <a className="share__link " href="#" title="facebook">
-            facebook
-          </a>
+          <button className={cn_Social1("button-each-service")} >
+            <IconFacebook
+              width={'24px'}
+              height={'24px'}
+              color={'#f28'}
+              transform={''}
+            />
+          </button>
 
-          <a className="share__link" href="#" title="google plus">
-            google plus
-          </a>
+          <button className={cn_Social1("button-each-service")} >
+            <IconTwitter
+              width={'24px'}
+              height={'24px'}
+              color={'#f28'}
+              transform={''}
+            />
+          </button>
 
-          <a className="share__link" href="#" title="dribbble">
-            dribbble
-          </a>
+
+          <button className={cn_Social1("button-each-service")} >
+            <IconGooglePlus
+              width={'24px'}
+              height={'24px'}
+              color={'#f28'}
+              transform={''}
+            />
+          </button>
+
+          <button className={cn_Social1("button-each-service")} >
+            <IconKakaoTalk
+              width={'24px'}
+              height={'24px'}
+              color={'#f28'}
+              transform={''}
+            />
+          </button>
 
         </div>
-      </div>
  
     </div>
   );
