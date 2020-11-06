@@ -13,7 +13,17 @@ function Nav({}: PropsNav) {
   const location = useLocation();
 
   // useMemo 와 typescript 어떻게 같이 잘 활용하는지 모르겠다..
-  const title = useMemo(() => location.pathname, [location]);
+  const title = useMemo((): string => {
+    if (location.pathname === "/") {
+      return "Style S";
+    } else {
+      const regex = /^\/(\w*)\/(\w*)/;
+      const raw = location.pathname;
+      const match = raw.match(regex)
+
+      return match[2];
+    }
+  }, [location]);
 
   const onClick_Link = useCallback(
     (
