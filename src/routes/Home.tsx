@@ -40,10 +40,10 @@ function Home({}: PropsHome) {
           tooltips
         </div>
         <div
-          className={cn_Home("item", "social")}
-          onClick={(event) => onClick_Link(event, "/works/social")}
+          className={cn_Home("item", "share")}
+          onClick={(event) => onClick_Link(event, "/works/share")}
         >
-          social
+          share
         </div>
       </div>
 

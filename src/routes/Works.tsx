@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Buttons from "../components/Works/Buttons";
 import Tooltips from "../components/Works/Tooltips";
-import Social from "../components/Works/Social";
+import Share from "../components/Works/Share";
 
 type PropsWorks = {};
 
@@ -19,8 +19,8 @@ function Works({}: PropsWorks) {
       <Route path="/works/tooltips">
         <Tooltips />
       </Route>
-      <Route path="/works/social">
-        <Social />
+      <Route path="/works/share">
+        <Share />
       </Route>
 
       <Route path="/works/inputs-text">
