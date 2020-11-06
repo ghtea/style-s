@@ -5,12 +5,20 @@ type PropsIcon = {
   height: string;
   color: string;
   transform: string;
+} & typeof defaultProps;
+
+const defaultProps = {
+  width: '100%',
+	height: '100%',
+	color: '#ffffff',
+	transform: ''
 };
 
 type StyleIcon = {
   width: string;
   height: string;
   transform: string;
+	color: string;
   display: string;
   flexFlow: string;
   justifyContent: string;
@@ -29,6 +37,7 @@ const Icon = ({ width, height, color, transform }: PropsIcon) => {
           width: `${width}`,
           height: `${height}`,
           transform: `${transform}`,
+					color: `${color}`,
           display: "flexbox",
           flexFlow: "column nowrap",
           justifyContent: "center",
@@ -39,7 +48,7 @@ const Icon = ({ width, height, color, transform }: PropsIcon) => {
       <svg
         width="100%"
         height="100%"
-        fill={color}
+        fill="currentColor"
         className=""
         aria-hidden="true"
         focusable="false"
@@ -53,7 +62,7 @@ const Icon = ({ width, height, color, transform }: PropsIcon) => {
     </div>
   );
 };
-
+Icon.defaultProps = defaultProps;
 //
 
 export default Icon;

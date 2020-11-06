@@ -31,8 +31,8 @@ function Social1({}: PropsSocial1) {
 
           <button className={cn_Social1("button-each-service")} >
             <IconFacebook
-              width={'24px'}
-              height={'24px'}
+              width={'22px'}
+              height={'22px'}
               color={'#f28'}
               transform={''}
             />
@@ -40,8 +40,8 @@ function Social1({}: PropsSocial1) {
 
           <button className={cn_Social1("button-each-service")} >
             <IconTwitter
-              width={'24px'}
-              height={'24px'}
+              width={'20px'}
+              height={'20px'}
               color={'#f28'}
               transform={''}
             />
@@ -50,8 +50,8 @@ function Social1({}: PropsSocial1) {
 
           <button className={cn_Social1("button-each-service")} >
             <IconGooglePlus
-              width={'24px'}
-              height={'24px'}
+              width={'28px'}
+              height={'28px'}
               color={'#f28'}
               transform={''}
             />
