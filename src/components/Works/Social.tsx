@@ -1,6 +1,6 @@
 import React from "react";
 
-import Social1 from './Social/Social1';
+import WorkSocial1 from './Social/WorkSocial1';
 
 import classNames from "classnames/bind"; // easy to forget bind!
 import styles_Social from "./Social.module.scss";
@@ -13,11 +13,8 @@ const cn_Social = classNames.bind(styles_Social);
 function Social({}: PropsSocial) {
   return (
     <div className={cn_Social("collection")}>
-
-      <div className={cn_Social("default", "item1")}>
-        <Social1/>
-      </div>
-
+    
+      <WorkSocial1/>
 
     </div>
   );
