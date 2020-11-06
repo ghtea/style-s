@@ -1,5 +1,5 @@
 @import "../../../config/reset.css";
-@import "./color__social.scss";
+@import "./color__share.scss";
 
 .work {
   
@@ -146,16 +146,28 @@
 
 .facebook.button-each-service {
   background-color: $color__facebook;
+  &:hover {
+    background-color: darken($color__facebook, 7%);
+  }
 }
 
 .twitter.button-each-service {
   background-color: $color__twitter;
+  &:hover {
+    background-color: darken($color__twitter, 7%);
+  }
 }
 
 .google-plus.button-each-service {
   background-color: $color__google_plus;
+  &:hover {
+    background-color: darken($color__google_plus, 7%);
+  }
 }
 
 .pinterest.button-each-service {
   background-color: $color__pinterest;
+  &:hover {
+    background-color: darken($color__pinterest, 7%);
+  }
 }

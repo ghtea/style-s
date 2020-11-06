@@ -8,14 +8,14 @@ import IconTumblr from "./icon/Tumblr";
 import IconTwitter from "./icon/Twitter";
 
 import classNames from "classnames/bind"; // easy to forget bind!
-import styles_root from "./WorkSocial1.module.scss";
+import styles_root from "./WorkShare1.module.scss";
 // css module not works yet
 
-type PropsWorkSocial1 = {};
+type PropsWorkShare1 = {};
 
 const cn_root = classNames.bind(styles_root);
 
-function WorkSocial1({}: PropsWorkSocial1) {
+function WorkShare1({}: PropsWorkShare1) {
   return (
     <div className={cn_root("work")}>
       <div className={cn_root("container")}>
@@ -65,6 +65,6 @@ function WorkSocial1({}: PropsWorkSocial1) {
   );
 }
 
-WorkSocial1.defaultProps = {};
+WorkShare1.defaultProps = {};
 
-export default WorkSocial1;
+export default WorkShare1;
