@@ -4,7 +4,7 @@
 
 .collection {
   display: flex;
-  flex-flow: row nowrap;   /* row */
+  flex-flow: row wrap;   /* row */
   justify-content: space-evenly; align-items: center;
   
   box-sizing: border-box;

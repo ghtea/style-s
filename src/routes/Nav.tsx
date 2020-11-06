@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
+import { useHistory, useLocation } from "react-router-dom";
 
 import classNames from "classnames/bind"; // easy to forget bind!
 import styles_Nav from "./Nav.module.scss";
@@ -10,6 +10,10 @@ type PropsNav = {};
 
 function Nav({}: PropsNav) {
   const history = useHistory();
+  const location = useLocation();
+
+  // useMemo 와 typescript 어떻게 같이 잘 활용하는지 모르겠다..
+  const title = useMemo(() => location.pathname, [location]);
 
   const onClick_Link = useCallback(
     (
@@ -32,13 +36,12 @@ function Nav({}: PropsNav) {
           className={cn_Nav("home")}
           onClick={(event) => onClick_Link(event, "/")}
         >
-          {" "}
-          Home{" "}
+          Home
         </div>
       </div>
 
       <div className={cn_Nav("middle")}>
-        <div> Style S </div>
+        <div> {title}</div>
       </div>
 
       <div className={cn_Nav("right")}>
