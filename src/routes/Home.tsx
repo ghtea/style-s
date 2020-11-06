@@ -81,10 +81,10 @@ function Home({}: PropsHome) {
 
       <div className={cn_Home("group", "big")}>
         <div
-          className={cn_Home("item", "sidebar")}
-          onClick={(event) => onClick_Link(event, "/works/sidebar")}
+          className={cn_Home("item", "nav")}
+          onClick={(event) => onClick_Link(event, "/works/nav")}
         >
-          sidebar
+          nav
         </div>
 
         <div

@@ -37,7 +37,7 @@ function Works({}: PropsWorks) {
         <div />
       </Route>
 
-      <Route path="/works/sidebar">
+      <Route path="/works/nav">
         <div />
       </Route>
       <Route path="/works/top-menu">

@@ -4,7 +4,12 @@ import { useHistory, useLocation } from "react-router-dom";
 import classNames from "classnames/bind"; // easy to forget bind!
 import styles_Nav from "./Nav.module.scss";
 
+import IconHome from "../components/Works/Nav/icon/Home";
+import IconDesigner from "../components/Works/Nav/icon/Designer";
+
+
 const cn_Nav = classNames.bind(styles_Nav);
+
 
 type PropsNav = {};
 
@@ -46,7 +51,12 @@ function Nav({}: PropsNav) {
           className={cn_Nav("home")}
           onClick={(event) => onClick_Link(event, "/")}
         >
-          Home
+          <IconHome
+            width={"28px"}
+            height={"28px"}
+            transform={""}
+          />
+          
         </div>
       </div>
 
@@ -55,7 +65,16 @@ function Nav({}: PropsNav) {
       </div>
 
       <div className={cn_Nav("right")}>
-        <div> designer </div>
+        <div
+          className={cn_Nav("designer")}
+          onClick={(event) => onClick_Link(event, "/")}
+        > 
+          <IconDesigner
+            width={"29px"}
+            height={"29px"}
+            transform={""}
+          /> 
+        </div>
       </div>
     </nav>
   );
