@@ -1,16 +1,16 @@
 import React from "react";
 
 import classNames from "classnames/bind"; // easy to forget bind!
-import styles_Tooltips from "./Tooltips.module.scss";
+import styles_root from "./Tooltips.module.scss";
 // css module not works yet
 
 type PropsTooltips = {};
 
-const cn_Tooltips = classNames.bind(styles_Tooltips);
+const cn_root = classNames.bind(styles_root);
 
 function Tooltips({}: PropsTooltips) {
   return (
-    <div className={cn_Tooltips("collection")}>
+    <div className={cn_root("collection")}>
 
         <div className="basic">
       
