@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Buttons from "../components/Works/Buttons";
-import Tooltips from "../components/Works/Tooltips";
+import Action from "../components/Works/Action";
 import Share from "../components/Works/Share";
 import Nav from "../components/Works/Nav";
 
@@ -17,8 +17,8 @@ function Works({}: PropsWorks) {
       <Route path="/works/buttons">
         <Buttons />
       </Route>
-      <Route path="/works/tooltips">
-        <Tooltips />
+      <Route path="/works/action">
+        <Action />
       </Route>
       <Route path="/works/share">
         <Share />
