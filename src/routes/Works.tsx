@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Buttons from "../components/Works/Buttons";
 import Tooltips from "../components/Works/Tooltips";
 import Share from "../components/Works/Share";
+import Nav from "../components/Works/Nav";
 
 type PropsWorks = {};
 
@@ -38,7 +39,7 @@ function Works({}: PropsWorks) {
       </Route>
 
       <Route path="/works/nav">
-        <div />
+        <Nav />
       </Route>
       <Route path="/works/top-menu">
         <div />
