@@ -1,42 +1,128 @@
-
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300);
-@import url(https://fonts.googleapis.com/css?family=Lobster);
-
-$side-menu-btn-color: #c0392b;
-
-*, *:before, *:after {
-  padding:0;
-  margin:0;
-}
+$color__sidebar: rgb(199, 3, 3);
 
 .body {
-  overflow-x: hidden;
-  color: #fff;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: 300;
-  
   display: flex;
-  flex-flow: row wrap;   /* row */
+  flex-flow: column nowrap;   /* row */
   justify-content: space-evenly; align-items: center;
-  width:100%;
-  height:100%;
+  
+  box-sizing: border-box;
+  border: 0px solid #aaa;  /* border: 2px dashed #aaa; */
+  background-color: none; 
+  color: #000;
+  
+  width: 100%; 
+  height: 100vh;
+  font-size: 1rem;
+  border-radius: 0px;
+  
+  position: relative;
+  
+  margin: 0px 0px 0px 0px; /* top right bottom left */
+  padding: 0px 0px 0px 0px; /* top right bottom left */
 }
 
 
-h1 {
-  font-family: 'Lobster', cursive;
-  font-weight:300;
-  font-size: 2.5em;
+.sidebar {
+  display: flex;
+  flex-flow: column nowrap;   /* row */
+  justify-content: space-evenly; align-items: center;
+  
+  box-sizing: border-box;
+  border: 0px solid #aaa;  /* border: 2px dashed #aaa; */
+  background-color: $color__sidebar; 
+  color: #000;
+  
+  width: 200px; 
+  height: 100%;
+  font-size: 1rem;
+  border-radius: 0px;
+  
+  position: fixed; 
+  left: 0px; top: 0px; bottom: 0px;
+  
+  margin: 0px 0px 0px 0px; /* top right bottom left */
+  padding: 0px 0px 0px 0px; /* top right bottom left */
+  z-index: 0;
+
+  & > div {
+    display: flex;
+    flex-flow: row nowrap;   /* row */
+    justify-content: flex-start; align-items: center;
+  
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+  
+    &:hover {
+      background-color: darken($color__sidebar, 10%);
+    }
+  }
+
 }
 
-.sidebar-btn {
-  position: absolute;
+
+.button__toggle-sidebar {
+  display: flex;
+  flex-flow: column nowrap;   /* row */
+  justify-content: space-evenly; align-items: center;
+  
+  box-sizing: border-box;
+  border: 0px solid #aaa;  /* border: 2px dashed #aaa; */
+  background-color: red; 
+  color: #000;
+  
+  width: 200px; 
+  height: 100%;
+  font-size: 1rem;
+  border-radius: 0px;
+  
+  position: absolute; 
+  left: 0px; top: 0px; bottom: 0px;
+  
+  margin: 0px 0px 0px 0px; /* top right bottom left */
+  padding: 0px 0px 0px 0px; /* top right bottom left */
+  z-index: 0;
+
   clip: rect(0, 0, 0, 0);
 }
 
-label[for="sidebar-btn"] {
+
+.content {
+
+  display: flex;
+  flex-flow: column nowrap;   /* row */
+  justify-content: space-evenly; align-items: flex-start;
+  
+  box-sizing: border-box;
+  border: 0px solid #aaa;  /* border: 2px dashed #aaa; */
+  background-color: #eee; 
+  color: #000;
+  
+  width: 100%;
+  height: 100vh;
+  font-size: 1rem;
+  border-radius: 0px;
+  
   position: fixed;
-  left: 15px; 
+  z-index: 1; 
+
+  margin: 0px 0px 0px 0px; /* top right bottom left */
+  padding: 0px 0px 0px 0px; /* top right bottom left */
+  
+}
+
+
+
+
+label[for="button__toggle-sidebar"] {
+  position: fixed;
+  left: 0px; 
   top: 15px;
   z-index: 2;
   height: 30px;
@@ -46,57 +132,14 @@ label[for="sidebar-btn"] {
   background-size: contain;
 }
 
-.sidebar-btn + label, .content {
+.button__toggle-sidebar + label, .content {
   transition: left 0.1s;
 }
 
-.sidebar-btn:checked + label {
-  left: 245px;
+.button__toggle-sidebar:checked + label {
+  left: 200px;
 }
 
-.sidebar-btn:checked ~ .content {
-  left: 230px;
-}
-
-.sidebar {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  background-color: $side-menu-btn-color;
-}
-
-.sidebar > ul > li {
-  background-color: $side-menu-btn-color;
-  padding:1em;
-  color: #fff;
-  width:300px;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight:400;  
-  
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-
-  &:hover {
-    background-color: darken($side-menu-btn-color, 10);
-  }
-}
-
-.content {
-  min-height: 100%;
-  min-width: 100%;
-  background-color: #34495e;
-  position: relative;
-  top: 0;
-  bottom: 100%;
-  left: 0;
-  z-index: 1;  
-  padding: 4em;
+.button__toggle-sidebar:checked ~ .content {
+  left: 200px;
 }
